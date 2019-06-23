@@ -1,4 +1,3 @@
-// var search = window.location.search;
 var paramsString = window.location.search.substr(1);
 var searchParams = new URLSearchParams(paramsString);
 var firstName, lastName, email, gender, firstNameEl, lastNameEl, emailEl, genderEl;
@@ -9,7 +8,7 @@ window.onload = function() {
 		firstName = searchParams.get("firstName")
 	}
 	else{
-		firstName = firstNameEl.getAttribute("placeholder");
+		firstName = '';
 	}
 	firstNameEl.value = firstName;
 
@@ -18,7 +17,7 @@ window.onload = function() {
 		lastName = searchParams.get("lastName")
 	}
 	else{
-		lastName = lastNameEl.getAttribute("placeholder");
+		lastName = '';
 	}
 	lastNameEl.value = lastName;
 
@@ -27,7 +26,7 @@ window.onload = function() {
 		email = searchParams.get("email")
 	}
 	else{
-		email = emailEl.getAttribute("placeholder");
+		email = '';
 	}
 	emailEl.value = email;
 
